@@ -2,7 +2,7 @@
  <head>
  </head>
  <body>
-  <span id='temp' style='font-size:50px'></span>
+  <span id='temp' style='font-size:200px'></span>
   <h1>BLE Temperature Monitoring<h1>
   <script src="https://www.puck-js.com/puck.js"></script>
   <button onclick="setInterval(function(){ Puck.eval('E.getTemperature()',function(d){document.getElementById('temp').innerHTML=d;});}, 1000);">Sync!!</button>
