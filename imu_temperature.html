@@ -5,7 +5,7 @@
   <span id='temp' style='font-size:200px'></span>
   <h1>BLE Temperature Monitoring<h1>
   <script src="https://www.puck-js.com/puck.js"></script>
-  <button onclick="setInterval(function(){ Puck.eval('LED1.getTemperature()',function(d){document.getElementById('temp').innerHTML=d;});}, 1000);">Sync!!</button>
+  <button onclick="Puck.eval('E.getTemperature()',function(d){console.log(d);});">Read!</button>
   
  </body>
 </html>
