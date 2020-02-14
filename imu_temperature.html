@@ -5,6 +5,7 @@
   <span id='temp' style='font-size:200px'></span>
   <h1>IMU Temperature Monitoring<h1>
   <script src="https://www.puck-js.com/puck.js"></script>
+  var on = false
   <button onclick="setInterval(function(){ 
     on = !on;
     LED1.write(on);}, 1000);">Sync!!</button>
