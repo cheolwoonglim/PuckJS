@@ -2,13 +2,8 @@
  <head>
  </head>
  <body>
-  <span id='temp' style='font-size:200px'></span>
-  <h1>IMU Temperature Monitoring<h1>
   <script src="https://www.puck-js.com/puck.js"></script>
-  var on = false
-  <button onclick="setInterval(function(){ 
-    on = !on;
-    LED1.write(on);}, 1000);">Sync!!</button>
-  
+  <button onclick="Puck.write('LED1.set();\n');">On!</button>
+  <button onclick="Puck.write('LED1.reset();\n');">Off!</button>
  </body>
 </html>
